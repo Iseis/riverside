@@ -7,22 +7,183 @@
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'mysite/css/bootstrap.min.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'mysite/css/bootstrap-theme.min.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'mysite/css/style.css' %}" type="text/css" />
+
     <script src="{% static 'mysite/js/jquery-3.1.1.min.js' %}"></script>
     <script src="{% static 'mysite/js/bootstrap.min.js' %}"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div style="background-color: blue;" class="col-md-4">
-                <h1>Hlep</h1>
-            </div>
-            <div style="background-color: yellow;" class="col-md-4">
-                <h1>Hlep</h1>
-            </div>
-            <div style="background-color: green;" class="col-md-4">
-                <h1>Hlep</h1>
-            </div>
+<body data-spy="scroll" data-target=".navbar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Riverside Nursery</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#app">Download Our App</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">
+              Log In
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createModal">
+              Create Account
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="createModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h4 class="modal-title">Create Account</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group center">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Renter Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success" data-toggle="modal" >
+              Sign up
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid content-container" id="home">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 adjust-vh">
+          <h1 class="font4em">Riverside Nursery</h1>
+          <p class="lead margin-top">Come see our selection of plants, gardening tools and gardening nicknacks.</p>
+          <p class="font1em margin-top">
+            We are located at 100 E 2nd South St Green River, WY 82935. If you
+            have any questions our happy and friendly staff will be happy to help you.
+          </p>
+          <p class="bold font1em margin-top">Interested? Join our mailing list.</p>
+
+          <form class="form-inline margin-top">
+            <div class="form-group">
+              <label class="sr-only" for="email">Enter Your Email</label>
+              <div class="input-group">
+                <div class="input-group-addon">@</div>
+                <input type="text" class="form-control" size="30" name="email" placeholder="Enter Your Email">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container content-container margin-bottom" id="about">
+      <div class="row center margin-top">
+        <h1 class="font4em">Why we are awesome!</h1>
+        <p class="lead">
+          Summary of why you are awesome.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 margin-top">
+          <h2><span class="glyphicon glyphicon-tree-conifer"></span> Something Intersting</h2>
+          <p>
+            More stuff about that one intersint thing. Blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah.
+          </p>
+        </div>
+        <div class="col-md-4 margin-top">
+          <h2><span class="glyphicon glyphicon-phone"></span> Something Intersting</h2>
+          <p>
+            More stuff about that one intersint thing. Blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah.
+          </p>
+        </div>
+        <div class="col-md-4 margin-top">
+          <h2><span class="glyphicon glyphicon-leaf"></span> Something Intersting</h2>
+          <p>
+            More stuff about that one intersint thing. Blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid content-container footer center" id="app">
+      <div class="row margin-top">
+        <h2 class="font4em margin-bottom">Download our App</h2>
+        <p class="lead font1em">Why should you download it.</p>
+        <a href="https://play.google.com/store">
+          <img src="{% static 'mysite/images/appstore.jpg' %}" alt="Google App Store" />
+        </a>
+        <p class="font2em big-margin">Visit like us on Facebook</p>
+        <a href="https://www.facebook.com/Riverside-Nursery-294494800607318">
+          <img src="{% static 'mysite/images/facebook.jpg' %}" alt="Facebook" height="100px"/>
+        </a>
+      </div>
     </div>
 </body>
 </html>

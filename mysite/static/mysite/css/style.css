@@ -1,0 +1,53 @@
+#home {
+  margin: 0;
+  background: url('../images/sunflower.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+
+.adjust-vh {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.font4em {
+  font-size: 4em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font1em {
+  font-size: 1.8em;
+}
+
+.width {
+  width: 400px;
+}
+
+.margin-top {
+  margin-top: 30px
+}
+
+.center {
+  text-align: center;
+}
+
+.footer {
+  background-color: #fcffba;
+}
+
+.margin-bottom {
+  margin-bottom: 50px
+}
+
+.big-margin {
+  margin-top: 150px;
+}
+
+.font2em {
+  font-size: 2em;
+}
